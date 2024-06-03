@@ -139,6 +139,21 @@ nav{
     transform: scaleX(1);
 } 
 
+
+/*Footer*/
+footer{
+    position: fixed; /*à modif pas fou SEO*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    left: 0;
+    right: 0;
+    padding: 15px 25px;
+    bottom: 0%;
+    margin: 0;
+    background: #fafafa;
+    box-shadow:  inset 0px 0px -1px  #c5c5c6;
+}
 /* Responsive*/
 @media (max-width: 900px){
     nav{

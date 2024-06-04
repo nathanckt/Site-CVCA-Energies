@@ -201,6 +201,14 @@ footer{
     color: #615c5c;
 }
 
+.footer-adresses a{
+    text-decoration: none;
+    color: #615c5c;
+}
+
+.footer-adresses a:hover{
+    text-decoration: underline;
+}
 .footer-top div{
     display: flex;
     flex-direction: column;
@@ -208,8 +216,6 @@ footer{
     margin-left: 20px;
     margin-right: 20px;
 }
-
-
 
 .footer-top div p{
     margin: 2px 0px;
@@ -225,6 +231,14 @@ h3{
     color: #615c5c;
 }
 
+.footer-contact a{
+    text-decoration: none;
+    color: #615c5c;
+}
+
+.footer-contact a:hover{
+    text-decoration: underline;
+}
 /* Responsive*/
 @media  (max-width: 900px){
     nav{
@@ -349,7 +363,7 @@ h3{
         font-weight: 550;
     }
 
-    .drop-link:hover{
+    .drop-link:hover a{
         color: #615c5c;
         font-weight: 550;
         width: max-content;
@@ -393,6 +407,10 @@ h3{
 
     .contact-icone img{
         width: 40px;
+    }
+
+    footer{
+        font-size: 14px;
     }
     
 }

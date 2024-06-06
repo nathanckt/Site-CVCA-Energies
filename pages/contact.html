@@ -70,14 +70,17 @@
         <main>
             <div class="intro-contact">
                 <img src="../contenu/entete/entete-contact.png" alt="Visuel d'introduction">
+                <h1>CONTACT</h1>
             </div>
             <section id="main-contact">
                 <div class="intro-main">
-                    <p>Pour nous contacter, vous pouvez nous appeler, ou nous écrire un message, nous vous répondrons dans les plus brefs délais.</p>
+                    <!-- <p>Pour nous contacter, vous pouvez nous appeler, ou nous écrire un message, nous vous répondrons dans les plus brefs délais.</p> -->
                 </div>
                 <div class="main-container">
                     <div class="contact-direct">
                     <!-- <h2>Nos Coordonnées</h2> -->
+                        <h2>Nous Contacter</h2>
+                        <p>Vous pouvez nous appeler, ou nous écrire un message, nous vous répondrons dans les plus brefs délais.</p>
                         <div class="direct-mail">
                             <h4>📧 E-mail</h4>
                             <a href="mailto:contact@cvca-energies.fr" target="_blank">contact@cvca-energies.fr</a>
@@ -86,31 +89,56 @@
                             <h4>☎️ Téléphone</h4>
                             <a href="tel:+33327876729" target="_blank">03.27.87.67.29</a>
                         </div>
-                        <img src="">
-                        <!-- <div class="direct-linkedin">
-                            <h4>Réseaux Sociaux</h4>
+                        <!-- <img src="../contenu/images/poste-travail.jpg"> -->
+                        <div class="direct-linkedin">
+                            <h4>🌐​ LinkedIn</h4>
                             <a href="https://www.linkedin.com/company/cvca-%C3%A9nergies/">Envoyez-nous un message sur LinkedIn</a>
-                        </div> -->
+                        </div> 
+                        <img src="../contenu/images/hexa-contact.png">
                     </div>
                     <div class="contact-form">
                         <!-- <h2>Laissez-nous un message</h2> -->
                         <form method="get" action="">
-                            <label for="nom">Nom</label> : <input type="text" name="nom" id="nom">
-                            <label for="entreprise">Entreprise</label> : <input type="text" name="entreprise" id="entreprise">
-                            <label for="tel">Téléphone</label> : <input type="tel" name="tel" id="tel">
-                            <label for="mail">Mail</label> : <input type="email" name="mail" id="mail">
-                            <label for="message">Message</label> : <textarea name="message" id="message"></textarea>
-                            <button type="submit">Envoyer</button>
+                            <div>
+                                <label for="nom">Nom</label><input placeholder=" Nom " type="text" name="nom" id="nom" >
+                            </div>
+                            <div>
+                                <label for="prenom">Prénom</label><input placeholder=" Prénom" type="text" name="prenom" id="prenom" >
+                            </div>
+                            <div>
+                                <label for="entreprise">Entreprise</label>  <input placeholder=" Entreprise" type="text" name="entreprise" id="entreprise">
+                            </div>
+                            <div>
+                                <label for="tel">Téléphone</label>  <input placeholder=" Téléphone" type="tel" name="tel" id="tel">
+                            </div>
+                            <label for="mail">Mail</label>  <input placeholder=" Mail" type="email" name="mail" id="mail">
+                            <label for="object">Objet</label>  <input placeholder=" Objet" type="text" name="object" id="object">
+                            <label for="message">Message</label>  <textarea placeholder=" Message"name="message" id="message"></textarea>
+                            <button type="submit">Envoyer </button>
                         </form>
                     </div>
                 </div>
             </section>
-            <div class="contact-agences">
-                <h2>Retrouvez-nous</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2549.6411743244244!2d3.1012154754759593!3d50.27995819962628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2b64c6bc9f833%3A0xc67c4d7bf64d12a2!2s4%20Rue%20Georges%20Lefebvre%2C%2059151%20Arleux!5e0!3m2!1sfr!2sfr!4v1717576045884!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2508.950300634206!2d2.343299375532777!3d51.03553864506596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dc8b9c0f34ed71%3A0xea1b6428ffd75c8c!2s27%20Rue%20Antoine%20Watteau%2C%2059430%20Dunkerque!5e0!3m2!1sfr!2sfr!4v1717576084654!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-
+            <section id="agences-contact">
+                <div class="container">
+                    <div class="titre-agences">
+                        <h2>Venez nous rencontrer</h2>
+                        <p>Nos équipes vous accueillent du lundi au vendredi, de 8h00 à 12h00 et de 13h30 à 16h30.</p>
+                    </div>
+                    <div class="contact-agences">
+                        <div class="arleux">
+                            <h4>Agence Arleux</h4>
+                            <a href="https://www.google.fr/maps/place/CVCA+%C3%A9nergies/@50.2799582,3.1012155,17z/data=!4m15!1m8!3m7!1s0x47c2b64c6bc9f833:0xc67c4d7bf64d12a2!2s4+Rue+Georges+Lefebvre,+59151+Arleux!3b1!8m2!3d50.2799548!4d3.1037904!16s%2Fg%2F11c43wmrp7!3m5!1s0x47c2b7e8e572c827:0x312e920ad38ac0fc!8m2!3d50.2799398!4d3.1039257!16s%2Fg%2F11ryq5jbnp?entry=ttu" target="_blank">📍 4 rue Georges Lefevbre, 59151 Arleux</a>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2549.6411743244244!2d3.1012154754759593!3d50.27995819962628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2b64c6bc9f833%3A0xc67c4d7bf64d12a2!2s4%20Rue%20Georges%20Lefebvre%2C%2059151%20Arleux!5e0!3m2!1sfr!2sfr!4v1717576045884!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="dunkerque">
+                            <h4>Agence Dunkerque</h4>
+                            <a href="https://www.google.fr/maps/place/27+Rue+Antoine+Watteau,+59430+Dunkerque/@51.0355473,2.3274204,15z/data=!3m1!4b1!4m10!1m2!2m1!1s27+Rue+Antoine+Watteau!3m6!1s0x47dc8b9c0f34ed71:0xea1b6428ffd75c8c!8m2!3d51.0355353!4d2.3458743!15sChYyNyBSdWUgQW50b2luZSBXYXR0ZWF1kgERY29tcG91bmRfYnVpbGRpbmfgAQA!16s%2Fg%2F11c4cf3n1x?entry=ttu" target="_blank">📍 27 rue Antoine Watteau, 59140 Dunkerque</a>                       
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2508.950300634206!2d2.343299375532777!3d51.03553864506596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dc8b9c0f34ed71%3A0xea1b6428ffd75c8c!2s27%20Rue%20Antoine%20Watteau%2C%2059430%20Dunkerque!5e0!3m2!1sfr!2sfr!4v1717576084654!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer>
             <div class="footer-top">

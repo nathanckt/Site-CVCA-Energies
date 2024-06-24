@@ -103,10 +103,10 @@ h2{
  }
 
  .contact-direct img {
-    width: 20em;
+    width: 15em;
     position: absolute;
-    top: 850px;
-    left: 530px; 
+    top: 90%;
+    left: 28%; 
  }
 
  .contact-direct p{

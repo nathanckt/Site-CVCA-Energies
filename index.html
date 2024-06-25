@@ -3,82 +3,167 @@
     <head>
         <meta charset="utf-8">
         <title>CVCA Energies</title>
-        <link href="style/style.css" rel="stylesheet">
+        <!-- <link href="style/style.css" rel="stylesheet"> -->
+        <link href="style/main.css" rel="stylesheet">
         <link href="contenu/logo/hexa-couleurs.png" rel="icon" type="image/png">
         <link href="contenu/logo/hexa-couleurs.ico" rel="icon" type="image/x-icon">
     </head>
     <body>
-        <nav class="navbar">
-                <a href="index.html" class="nav-icon" aria-label="Visiter la page d'accueil" aria-current="page">
-                    <img src="contenu/logo/complet-couleurs.png" alt="Logo CVCA Energies">
+        <header class="navbar">
+            <a href="index.html" class="nav-icon" aria-label="Visiter la page d'accueil" aria-current="page">
+                <img src="contenu/logo/complet-couleurs.png" alt="Logo CVCA Energies">
+            </a>
+
+            <nav>
+                <button class="hamburger" type="button" aria-label="Bouton Menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="navlinks-container">
+                    <li class="main-link" aria-current="page"><a href="index.html">Accueil</a></li>
+                    <li class="main-link dropdown">A propos
+                        <ul class="dropdown-container" id="dropdown-propos">
+                            <li class="drop-link">
+                                <a href="pages/a-propos/histoire.html"><span>&#9654;</span> Notre histoire</a>
+                            </li>
+                            <li class="drop-link">
+                                <a href="pages/a-propos/valeurs.html"><span>&#9654;</span> Nos valeurs</a>
+
+                            </li>
+                            <li class="drop-link">
+                                <a href="pages/a-propos/implantations.html"><span>&#9654;</span> Nos implantations</a>
+                            </li>
+                            <li class="drop-link">
+                                <a href="pages/a-propos/rse.html"><span>&#9654;</span> RSE</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main-link dropdown">Nos compétences
+                        <ul class="dropdown-container" id="dropdown-metiers">
+                            <li class="drop-link">
+                                <a href="pages/competences/expertises.html" ><span>&#9654;</span> Domaines d'expertises</a>
+                            </li>
+                            <li class="drop-link">
+                                <a href="pages/competences/secteurs-activites.html"><span>&#9654;</span> Secteurs d'activité</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main-link"><a href="pages/carriere.html" >Carrières</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-button">
+                <a href="pages/contact.html" class="contact-icone" aria-label="Contactez-nous">
+                    <img src="contenu/icone/contact-icone.png" alt="contact-icone">
                 </a>
-
-                <div class="main-navlinks">
-                    <button class="hamburger" type="button" aria-label="Bouton Menu" aria-expanded="false">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                <div class="contact-btn">
+                    <button type="button"><a href="pages/contact.html">Contact</a></button>
+                    <button type="button">
+                        <a href="https://www.linkedin.com/company/cvca-%C3%A9nergies" target="_blank">
+                        <img id="logo-linkedin" src="contenu/icone/logo-linkedin.png" alt="logo linkedin">
+                        </a>
                     </button>
-                    <ul class="navlinks-container">
-                        <li class="main-link" aria-current="page"><a href="index.html">Accueil</a></li>
-                        <li class="main-link dropdown">A propos
-                            <ul class="dropdown-container" id="dropdown-propos">
-                                <li class="drop-link">
-                                    <a href="pages/a-propos/histoire.html"><span>&#9654;</span> Notre histoire</a>
-                                </li>
-                                <li class="drop-link">
-                                    <a href="pages/a-propos/valeurs.html"><span>&#9654;</span> Nos valeurs</a>
-
-                                </li>
-                                <li class="drop-link">
-                                    <a href="pages/a-propos/implantations.html"><span>&#9654;</span> Nos implantations</a>
-                                </li>
-                                <li class="drop-link">
-                                    <a href="pages/a-propos/rse.html"><span>&#9654;</span> RSE</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="main-link dropdown">Nos compétences
-                            <ul class="dropdown-container" id="dropdown-metiers">
-                                <li class="drop-link">
-                                    <a href="pages/competences/expertises.html" ><span>&#9654;</span> Domaines d'expertises</a>
-                                </li>
-                                <li class="drop-link">
-                                    <a href="pages/competences/secteurs-activites.html"><span>&#9654;</span> Secteurs d'activité</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="main-link"><a href="pages/carriere.html" >Carrières</a></li>
-                    </ul>
                 </div>
+            </div>
+        </header>
 
-                <div class="nav-contact">
-                    <a href="pages/contact.html" class="contact-icone" aria-label="Contactez-nous">
-                        <img src="contenu/icone/contact-icone.png" alt="contact-icone">
-                    </a>
-                    <div class="contact-btn">
-                        <button type="button"><a href="pages/contact.html">Contact</a></button>
-                        <button type="button">
-                            <a href="https://www.linkedin.com/company/cvca-%C3%A9nergies" target="_blank">
-                            <img id="logo-linkedin" src="contenu/icone/logo-linkedin.png" alt="logo linkedin">
-                            </a>
-                        </button>
+        <main>
+            <section class="intro">
+                <div class="intro-content">
+                    <div class="intro-texte">
+                        <h1>CVCA ENERGIES</h1>
+                        <p class="text-intro">
+                            Le spécialiste en Génie Climatique au services des professionnels
+                        </p>
+                        <div>
+                            <a href="#" class="cta">NOUS DÉCOUVRIR</a>
+                            <a href="#" class="cta">NOUS REJOINDRE</a>
+                        </div>
+                    </div>
+                    <img src="#" alt="logo CVCA Energies">
+                </div>
+            </section>
+            <section class="engagement">
+                <div class="content">
+                    <img src="#" alt="Photo d'un soudeur de CVCA Energies">
+                    <div class="text">
+                        <h2>Notre<span>Engagement</span></h2>
+                        <p>
+                            Chez CVCA Énergies, notre engagement va bien au-delà de la simple prestation de services. Nous nous investissons pleinement dans chaque projet, avec un réel dévouement envers nos clients et leurs besoins.
+
+                            Notre équipe unie et solidaire est constamment à l'écoute, prête à relever les défis les plus complexes avec créativité et professionnalisme.
+                            
+                            Chez CVCA Énergies, notre engagement se traduit par une quête incessante de l'excellence, où la qualité, la sécurité et le respect de l'environnement sont au cœur de toutes nos actions                        
+                        </p>
                     </div>
                 </div>
-            </nav>
-        <main>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac ullamcorper mi. Sed nec laoreet ipsum, ac rutrum felis. Nullam sit amet eleifend lectus. Fusce pellentesque lorem at quam scelerisque, sit amet auctor magna vestibulum. Nam vulputate ultrices ante, ut porta sem sagittis eu. Donec ultricies dui nulla, sed maximus elit tristique non. Donec iaculis vestibulum ipsum, at consequat ligula. Sed auctor sagittis diam tristique bibendum. Duis ultricies sit amet justo nec posuere. Etiam dignissim, sapien sed fermentum posuere, lorem ante vestibulum risus, gravida placerat mi turpis id massa. Sed non ante eu sapien efficitur auctor vel eget neque. Nullam elit turpis, feugiat non ex eu, viverra accumsan nunc.
-
-Aenean a felis sit amet libero malesuada pulvinar eget quis arcu. In gravida lacus vitae ante suscipit, quis pulvinar enim pharetra. Nulla vitae odio nec eros molestie eleifend non in leo. Proin ac dui lacinia, pharetra purus quis, tempus urna. Donec imperdiet mi vitae gravida vestibulum. Fusce varius, leo at gravida mattis, neque nisl volutpat felis, quis convallis nisi tortor quis odio. Proin euismod interdum erat eu congue. Vestibulum egestas at ligula vel consequat. Phasellus sed euismod libero, at viverra sapien. Fusce quis accumsan eros. Ut non velit felis. Fusce molestie porta dui accumsan mollis. Pellentesque suscipit aliquet massa, ut aliquam nisi rhoncus vitae.
-
-Sed vitae eros lectus. Donec eros elit, auctor et consequat in, mattis ac diam. Etiam eros eros, congue vitae interdum eget, tempor eget nibh. Morbi ut nisl sit amet ipsum pulvinar viverra. Vestibulum placerat leo nec ex molestie molestie. Nulla faucibus iaculis consectetur. Curabitur ac tempor nibh, sit amet lobortis turpis. Quisque mollis vitae ipsum sit amet imperdiet.
-
-Aenean accumsan arcu a placerat molestie. Integer consequat dui vitae luctus tincidunt. Curabitur id nulla commodo, porta erat vitae, imperdiet risus. Pellentesque enim augue, interdum ac tristique eget, mattis non urna. Phasellus tincidunt sed dui vel lobortis. Mauris tristique, dolor eget condimentum tincidunt, nisi libero lobortis elit, et mattis nulla neque id nulla. Sed vel aliquet velit, eu pretium ligula. Vestibulum turpis lorem, venenatis vel dapibus faucibus, sagittis ut velit. Cras ac justo luctus turpis egestas gravida id at leo. Suspendisse posuere viverra enim. Etiam a quam feugiat, gravida ligula quis, mollis massa. Donec id vehicula erat. Phasellus commodo orci tempus, molestie massa in, ullamcorper ex. Cras elementum elit et est pharetra, nec hendrerit odio commodo. Aliquam aliquam a felis ut scelerisque. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-
-Vestibulum id magna quis felis interdum aliquam vel cursus tellus. Curabitur magna leo, rutrum ut efficitur vel, ornare sit amet nisl. Fusce interdum enim sed nibh finibus, et dictum elit accumsan. Morbi non nisl ac lacus gravida hendrerit. Pellentesque velit lorem, placerat a commodo et, dictum a justo. Nam in eros orci. Donec dui justo, finibus non finibus quis, tristique ut nisl. Proin ac mi purus.
-            </p>
-
+            </section>
+            <section class="chiffres">
+                <div>
+                    <h3>10</h3>
+                    <p>années d'existences</p>
+                </div>
+                <div>
+                    <h3>206</h3>
+                    <p>chantiers réalisés</p>
+                </div>
+                <div>
+                    <h3>2</h3>
+                    <p>agences en France/p>
+                </div>
+                <div>
+                    <h3>53</h3>
+                    <p>collaborateurs investis</p>
+                </div>
+            </section>
+            <section class="activite">
+                <h2>Secteurs<span>D'activités</span></h2>
+                <p>
+                    Depuis plus de 10 ans, CVCA Energies s’engage aux services des profesionnels et dans de nombreux secteurs !
+                </p>
+                <a href="#">
+                    <img src="assets/images/hexa-activites/1.png" alt="Icone représentant un secteur d'activité porposé par l'entreprise">
+                </a>
+                <a href="#">
+                    <img src="assets/images/hexa-activites/2.png" alt="Icone représentant un secteur d'activité porposé par l'entreprise">
+                </a>
+                <a href="#">
+                    <img src="assets/images/hexa-activites/3.png" alt="Icone représentant un secteur d'activité porposé par l'entreprise">
+                </a>
+                <a href="#">
+                    <img src="assets/images/hexa-activites/4.png" alt="Icone représentant un secteur d'activité porposé par l'entreprise">
+                </a>
+                <a href="#">
+                    <img src="assets/images/hexa-activites/5.png" alt="Icone représentant un secteur d'activité porposé par l'entreprise">
+                </a>
+                <a href="#">
+                    <img src="assets/images/hexa-activites/6.png" alt="Icone représentant un secteur d'activité porposé par l'entreprise">
+                </a>
+            </section>
+            <section class="references">
+                <h2>Quelques<span>Références</span></h2>
+                <div class="diapo-ref">
+                    <!-- à voir si on peut juste défiler les photos ou cliquer dessus -->
+                </div>
+                <p>
+                    Découvrez les domaines d'expertises de CVCA Energies
+                </p>
+                <div class="cta-domaine">
+                    <a href="#" class="cta-s">CHAUFFAGE</a>
+                    <a href="#" class="cta-s">CLIMATISATION</a>
+                    <a href="#" class="cta-s">VENTILATION</a>
+                    <a href="#" class="cta-s">PLOMBERIE</a>
+                    <a href="#" class="cta-s">MAINTENANCE</a>
+                    <a href="#" class="cta-s">GTB/GTC</a>
+                </div>
+            </section>
+            <section class="actus">
+                <h2>Dernières<span>Actualités</span></h2>
+                <div class="caroussel-img">
+                    <!-- Voir comment faire un carrousel avant -->
+                </div>
+            </section>
         </main>
         <footer>
             <div class="footer-top">

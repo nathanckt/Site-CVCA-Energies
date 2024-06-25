@@ -1,0 +1,41 @@
+@import url("assets/polices/calibri-font-family");
+/* Design System */
+:root{
+    /* Couleurs Principales*/
+    --cvca-red: #FF4A3C;
+    --cvca-grey: #615C5C;
+    --fond-grey: #f1f1f1;
+    --fond-white: #ffffff;
+    
+    /* Config Textes */
+    --title-font: 'Arial';
+    --all-font: 'Calibri'; 
+
+    --body-font-weigth: ;
+    --h1-font-weigth: ;
+    --h2-grey-font-weigth: ;
+    --h2-red-font-weigth: ;
+    --h3-font-weigth: ;
+
+    --body-font-size: ;
+    --h1-font-size: ;
+    --h2-grey-font-size: ;
+    --h2-red-font-size: ;
+    --h3-font-size: ;
+
+    --body-line-height: ;
+    --h1-line-height: ;
+    --h2-grey-line-height: ;
+    --h2-red-line-height: ;
+    --h3-line-height: ;
+}
+
+
+*,
+::before
+::after {
+    box-sizing: border-box;
+    margin:0 ;
+    padding: 0;
+    font-family:  ;
+}

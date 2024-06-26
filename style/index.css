@@ -1,0 +1,6 @@
+/* Héro Bar */
+.intro-content{
+    height: 100vh;
+    background:  url("../assets/images/photos/cvca-005.jpg") no-repeat center center ;
+    background-size: cover;
+}

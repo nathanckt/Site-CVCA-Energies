@@ -3,15 +3,16 @@
     <head>
         <meta charset="utf-8">
         <title>CVCA Energies</title>
-        <!-- <link href="style/style.css" rel="stylesheet"> -->
+        <link href="style/index.css" rel="stylesheet"> 
         <link href="style/main.css" rel="stylesheet">
+        <link href="style/header.css" rel="stylesheet">
         <link href="contenu/logo/hexa-couleurs.png" rel="icon" type="image/png">
         <link href="contenu/logo/hexa-couleurs.ico" rel="icon" type="image/x-icon">
     </head>
     <body>
         <header class="navbar">
             <a href="index.html" class="nav-icon" aria-label="Visiter la page d'accueil" aria-current="page">
-                <img src="contenu/logo/complet-couleurs.png" alt="Logo CVCA Energies">
+                <img src="assets/logo-cvca/svg/titre-couleurs.svg" alt="Logo CVCA Energies">
             </a>
 
             <nav>
@@ -21,49 +22,44 @@
                     <span></span>
                 </button>
                 <ul class="navlinks-container">
-                    <li class="main-link" aria-current="page"><a href="index.html">Accueil</a></li>
-                    <li class="main-link dropdown">A propos
+                    <li class="main-link nodrop active" aria-current="page"><a href="index.html">ACCUEIL</a></li>
+                    <li class="main-link dropdown">A PROPOS
                         <ul class="dropdown-container" id="dropdown-propos">
                             <li class="drop-link">
-                                <a href="pages/a-propos/histoire.html"><span>&#9654;</span> Notre histoire</a>
+                                <a href="pages/a-propos/histoire.html"><span>&#9654;</span> QUI SOMMES-NOUS ?</a>
                             </li>
                             <li class="drop-link">
-                                <a href="pages/a-propos/valeurs.html"><span>&#9654;</span> Nos valeurs</a>
+                                <a href="pages/a-propos/valeurs.html"><span>&#9654;</span> NOS VALEURS</a>
 
                             </li>
                             <li class="drop-link">
-                                <a href="pages/a-propos/implantations.html"><span>&#9654;</span> Nos implantations</a>
-                            </li>
-                            <li class="drop-link">
-                                <a href="pages/a-propos/rse.html"><span>&#9654;</span> RSE</a>
+                                <a href="pages/a-propos/implantations.html"><span>&#9654;</span> NOS IMPLANTATIONS</a>
                             </li>
                         </ul>
                     </li>
-                    <li class="main-link dropdown">Nos compétences
+                    <li class="main-link dropdown">NOS COMPÉTENCES
                         <ul class="dropdown-container" id="dropdown-metiers">
                             <li class="drop-link">
-                                <a href="pages/competences/expertises.html" ><span>&#9654;</span> Domaines d'expertises</a>
+                                <a href="pages/competences/expertises.html" ><span>&#9654;</span> DOMAINES D'EXPERTISES</a>
                             </li>
                             <li class="drop-link">
-                                <a href="pages/competences/secteurs-activites.html"><span>&#9654;</span> Secteurs d'activité</a>
+                                <a href="pages/competences/secteurs-activites.html"><span>&#9654;</span> SECTEURS D'ACTIVITÉS</a>
                             </li>
                         </ul>
                     </li>
-                    <li class="main-link"><a href="pages/carriere.html" >Carrières</a></li>
+                    <li class="main-link nodrop"><a href="pages/carriere.html" >CARRIÈRES</a></li>
                 </ul>
             </nav>
 
             <div class="header-button">
                 <a href="pages/contact.html" class="contact-icone" aria-label="Contactez-nous">
-                    <img src="contenu/icone/contact-icone.png" alt="contact-icone">
+                    <img src="assets/icone/contact-icone.png" alt="contact-icone">
                 </a>
                 <div class="contact-btn">
-                    <button type="button"><a href="pages/contact.html">Contact</a></button>
-                    <button type="button">
-                        <a href="https://www.linkedin.com/company/cvca-%C3%A9nergies" target="_blank">
-                        <img id="logo-linkedin" src="contenu/icone/logo-linkedin.png" alt="logo linkedin">
-                        </a>
-                    </button>
+                    <a class="cta-nav contact" href="pages/contact.html">CONTACT</a>
+                    <a class="cta-nav linkedin"href="https://www.linkedin.com/company/cvca-%C3%A9nergies" target="_blank">
+                        <img id="logo-linkedin" src="assets/icone/logo-linkedin.svg" alt="logo linkedin">
+                    </a>
                 </div>
             </div>
         </header>
@@ -81,7 +77,7 @@
                             <a href="#" class="cta">NOUS REJOINDRE</a>
                         </div>
                     </div>
-                    <img src="#" alt="logo CVCA Energies">
+                    <img src="./assets/logo-cvca/svg/hexa-couleurs.svg" alt="logo CVCA Energies">
                 </div>
             </section>
             <section class="engagement">

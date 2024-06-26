@@ -1,6 +1,75 @@
 /* Héro Bar */
 .intro-content{
     height: 100vh;
-    background:  url("../assets/images/photos/cvca-005.jpg") no-repeat center center ;
+    position: relative;
+    top:-40px;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3), rgba(255,255,255,1)), 
+                url("../assets/images/photos/cvca-005.jpg") no-repeat center center ;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.intro-texte{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 600px;
+}
+.intro-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-logo img{
+    width: 500px ;
+    position: absolute;
+}
+
+#hexagon {
+    height: 550px; /* adjust to control the size  */
+    aspect-ratio: cos(30deg);
+    clip-path: polygon(-50% 50%,50% 100%,150% 50%,50% 0);
+    background: rgba(255,255,255,0.7);
+}
+
+.text-intro{
+    font-family: var(--title-font);
+    font-size: var(--h2-red-font-size);
+    color: var(--white);
+    font-weight: 600;
+    font-style: italic;
+    width: 500px;
+}
+
+.intro-cta{
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+h1{
+    margin-bottom: 0;
+}
+
+/* Notre engagement */
+.engagement .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.engagement .content .text {
+    width: 50%;
+}
+
+.engagement h2{
+    margin-left: auto;
+}
+
+.engagement img{
+    width: 400px;
 }

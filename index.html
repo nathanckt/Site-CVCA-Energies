@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8">
         <title>CVCA Energies</title>
+        <!-- <link rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.css"> -->
+        <link rel="stylesheet" href="style/materialize-scoped.css">
         <link href="style/index.css" rel="stylesheet"> 
         <link href="style/main.css" rel="stylesheet">
         <link href="style/header.css" rel="stylesheet">
@@ -105,33 +107,36 @@
             <section class="chiffres">
                 <div>
                     <h3>10</h3>
-                    <p>années d'existences</p>
+                    <p>années <br>d'existences</p>
                 </div>
                 <div>
                     <h3>206</h3>
-                    <p>chantiers réalisés</p>
+                    <p>chantiers <br>réalisés</p>
                 </div>
                 <div>
                     <h3>2</h3>
-                    <p>agences en France</p>
+                    <p>agences <br>en France</p>
                 </div>
                 <div>
                     <h3>53</h3>
-                    <p>collaborateurs investis</p>
+                    <p>collaborateurs<br>investis</p>
                 </div>
             </section>
             <section class="activite">
+                <div id="text-secteurs">
                 <h2>Secteurs<br><span>D'activités</span></h2>
                 <p>
                     Depuis plus de 10 ans, CVCA Energies s’engage aux services des profesionnels et dans de nombreux secteurs !
                 </p>
-                <a href="#">
+                </div>
+                <div id="hexa-secteurs">
+                <a href="#" class="top">
                     <img src="assets/images/hexa-activites/1.png" alt="Icone représentant un secteur d'activité porposé par l'entreprise">
                 </a>
-                <a href="#">
+                <a href="#" class="top">
                     <img src="assets/images/hexa-activites/2.png" alt="Icone représentant un secteur d'activité porposé par l'entreprise">
                 </a>
-                <a href="#">
+                <a href="#" class="top">
                     <img src="assets/images/hexa-activites/3.png" alt="Icone représentant un secteur d'activité porposé par l'entreprise">
                 </a>
                 <a href="#">
@@ -143,22 +148,39 @@
                 <a href="#">
                     <img src="assets/images/hexa-activites/6.png" alt="Icone représentant un secteur d'activité porposé par l'entreprise">
                 </a>
+            </div>
             </section>
             <section class="references">
                 <h2>Quelques<br><span>Références</span></h2>
-                <div class="diapo-ref">
-                    <!-- à voir si on peut juste défiler les photos ou cliquer dessus -->
+                <div class="materialize-scope carousel-container">
+                    <div class="carousel carousel-slider">
+                        <a class="carousel-item">
+                            <img src="assets/images/photos/cvca-soudure1.jpg" alt="">
+                        </a>
+                        <a class="carousel-item">
+                            <img src="assets/images/photos/cvca-soudure1.jpg" alt="">
+                        </a>
+                        <a class="carousel-item">
+                            <img src="assets/images/photos/cvca-soudure1.jpg" alt="">
+                        </a>
+                        <a class="carousel-item">
+                            <img src="assets/images/photos/cvca-soudure1.jpg" alt="">
+                        </a>
+                        <a class="carousel-item">
+                            <img src="assets/images/photos/cvca-soudure1.jpg" alt="">
+                        </a>
+                    </div>
                 </div>
                 <p>
                     Découvrez les domaines d'expertises de CVCA Energies
                 </p>
                 <div class="cta-domaine">
-                    <a href="#" class="cta-s">CHAUFFAGE</a>
-                    <a href="#" class="cta-s">CLIMATISATION</a>
-                    <a href="#" class="cta-s">VENTILATION</a>
-                    <a href="#" class="cta-s">PLOMBERIE</a>
-                    <a href="#" class="cta-s">MAINTENANCE</a>
-                    <a href="#" class="cta-s">GTB/GTC</a>
+                    <a href="#" class="cta -s">CHAUFFAGE</a>
+                    <a href="#" class="cta -s">CLIMATISATION</a>
+                    <a href="#" class="cta -s">VENTILATION</a>
+                    <a href="#" class="cta -s">PLOMBERIE</a>
+                    <a href="#" class="cta -s">MAINTENANCE</a>
+                    <a href="#" class="cta -s">GTB/GTC</a>
                 </div>
             </section>
             <section class="actus">
@@ -197,6 +219,20 @@
                 </div>
             </div>
         </footer>
-        <script src="script/script.js" ></script>
+        <!-- Inclure jQuery -->
+        <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+        <!-- Inclure Materialize JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <!-- Votre script personnalisé -->
+        <script src="script/script.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.materialize-scope .carousel.carousel-slider').carousel({
+                    fullWidth: true,
+                    indicators: true,
+                    duration: 200
+                });
+            });
+        </script>
     </body>
 </html>

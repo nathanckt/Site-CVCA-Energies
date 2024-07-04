@@ -5,9 +5,11 @@
         <title>CVCA Energies</title>
         <!-- <link rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.css"> -->
         <link rel="stylesheet" href="style/materialize-scoped.css">
+        <script src="script/script.js"></script>
         <link href="style/index.css" rel="stylesheet"> 
         <link href="style/main.css" rel="stylesheet">
         <link href="style/header.css" rel="stylesheet">
+        <link rel="stylesheet" href="style/footer.css">
         <link href="contenu/logo/hexa-couleurs.png" rel="icon" type="image/png">
         <link href="contenu/logo/hexa-couleurs.ico" rel="icon" type="image/x-icon">
     </head>
@@ -130,7 +132,7 @@
                 </p>
                 </div>
                 <div id="hexa-secteurs">
-                <a href="#" class="top">
+                <a href="#" class="top" onclick="checkApiConnection()">
                     <img src="assets/images/hexa-activites/1.png" alt="Icone représentant un secteur d'activité porposé par l'entreprise">
                 </a>
                 <a href="#" class="top">
@@ -210,12 +212,14 @@
                     <a id="footer-linkedin" href="#">🌐​ LinkedIn</a>
                 </div>
             </div>
-            <div class="footer-infos">
-                <p>@2024 - CVCA Energies</p>
-                <div class="liens-mentions">
-                    <a href="pages/mentions/mentions-legales.html" class="link-footer"> Mentions légales</a>
-                    <span> / </span>
-                    <a href="pages/mentions/confidentialité.html" class="link-footer">Politique de confidentialité</a>
+            <div class="footer-bottom">
+                <div class="footer-infos">
+                    <p>@2024 - CVCA Energies</p>
+                    <div class="liens-mentions">
+                        <a href="pages/mentions/mentions-legales.html" class="link-footer"> Mentions légales</a>
+                        <span> / </span>
+                        <a href="pages/mentions/confidentialité.html" class="link-footer">Politique de confidentialité</a>
+                    </div>
                 </div>
             </div>
         </footer>

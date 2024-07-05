@@ -1,0 +1,192 @@
+/* Héro Bar */
+.intro-content{
+    height: 100vh;
+    position: relative;
+    top:-40px;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3), rgba(255,255,255,1)), 
+                url("../assets/images/photos/cvca-005.jpg") no-repeat center center ;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.intro-texte{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 600px;
+}
+.intro-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-logo img{
+    width: 500px ;
+    position: absolute;
+}
+
+#hexagon {
+    height: 550px; /* adjust to control the size  */
+    aspect-ratio: cos(30deg);
+    clip-path: polygon(-50% 50%,50% 100%,150% 50%,50% 0);
+    background: rgba(255,255,255,0.7);
+}
+
+.text-intro{
+    font-family: var(--title-font);
+    font-size: 2.66rem;
+    color: var(--white);
+    font-weight: 600;
+    font-style: italic;
+    width: 500px;
+}
+
+.intro-cta{
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+h1{
+    margin-bottom: 0;
+}
+
+/* Notre engagement */
+.engagement .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right:40px;
+}
+
+.engagement .content .text {
+    width: 50%;
+}
+.engagement .content .text :nth-child(4){
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.engagement h2{
+    margin-left: auto;
+}
+
+.engagement img{
+    height : 500px;
+    width: 400px;
+    margin-left:40px;
+    object-fit: cover;
+    box-shadow: 2px 4px 4px 0px ;
+}
+
+/* Chiffres */
+.chiffres {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.chiffres div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+h3{
+    font-size: var(--h2-red-font-size);
+    color: var(--cvca-red);
+}
+
+/* Activités */
+.activite{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8%
+}
+
+#text-secteurs{
+    width: 30%;
+    margin-left: auto;
+}
+
+#text-secteurs p{
+    position: relative;
+    left: 58px;
+    top: 10px;
+    width: 400px;
+}
+
+#hexa-secteurs{
+    width: 50%;
+    margin-right: 40px;
+}
+
+#hexa-secteurs a{
+    width:250px;
+    height: 250px;
+}
+
+#hexa-secteurs img{
+    width: max-content;
+}
+
+.top{
+    position: relative;
+    left: -100px;
+    top: 30px;
+}
+
+.activite p{
+    font-size: 1.5rem;
+}
+
+.activite h2{
+    padding-top: 30px;
+    margin-bottom: 10px;
+}
+
+#hexa-secteurs img:hover{
+    width: 210px;
+}
+
+/* Références */
+.references{
+    padding: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.references h2{
+    align-self: flex-start;
+}
+
+.carousel-container {
+    width: 100%;  /* Largeur du carousel */
+    height: 600px;  /* Hauteur du carousel */
+    overflow: hidden;  /* Assurez-vous que le contenu ne déborde pas */
+}
+
+.materialize-scope .carousel.carousel-slider .carousel-item img {
+    width: 100%;  /* Les images prennent toute la largeur du carousel */
+    height: 100%;  /* Les images prennent toute la hauteur du carousel */
+    object-fit: cover;  /* Les images couvrent le conteneur sans déformer */
+}
+
+.cta-domaine {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}

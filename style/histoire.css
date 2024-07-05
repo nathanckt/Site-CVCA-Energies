@@ -1,0 +1,38 @@
+.content{
+    margin: 40px 150px;
+}
+
+.content p{
+    text-align: justify;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    background-image: url("../assets/images/poste-travail.jpg");
+}
+
+
+h2 span{
+    color: var(--cvca-red);
+    position : relative;
+    font-size: var(--h2-red-font-size);
+    font-weight: var(--h2-red-font-weigth);
+    top: 50px;
+    left: -50px; 
+}
+
+h2{
+    margin-bottom: 5rem;
+}
+
+.dates h2 span{
+    left: -120px;
+}
+
+.famille h2 span{
+    left: -120px;
+}
